@@ -1,0 +1,10 @@
+eureka_odometry:
+  ros__parameters:
+    odometry_pub_topic: "~/odometry"
+    joint_sub_topic: "/wheel_states"
+    imu_sub_topic: "/imu/data"
+    enable_odom_tf: false
+    wheel_radius: 0.11
+    wheel_base: 0.83
+    wheel_track: 0.8
+    measure_error: 0.0
