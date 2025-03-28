@@ -46,7 +46,7 @@ def generate_launch_description():
   ekf_el_classico_config_path = os.path.join(get_package_share_directory(current_package_name), 'config', 'ekf_el_classico.yaml')
   # ekf_eagleye_config_path = os.path.join(get_package_share_directory(current_package_name), 'config', 'ekf_eagleye_based.yaml')
   ekf_vis_odom_config_path = os.path.join(get_package_share_directory(current_package_name), 'config', 'ekf_vis_based.yaml')
-  rgbd_config_path = os.path.join(get_package_share_directory("eureka_simulation"), 'config', 'localization', 'rgbd_odometry.yaml')
+  rgbd_config_path = os.path.join(get_package_share_directory(current_package_name), 'config', 'localization', 'rgbd_odometry.yaml')
   # eagleye_estimator_config_path = os.path.join(get_package_share_directory(current_package_name), 'config', 'eagleye.yaml')
 
   #launch's path
