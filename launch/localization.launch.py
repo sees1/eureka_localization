@@ -79,11 +79,9 @@ def generate_launch_description():
     output="log",
     parameters=[rgbd_config_path],
     remappings=[
-        ("rgb/image", "/camera/image_raw"),
-        ("rgb/camera_info", "/camera/camera_info"),
-        ("depth/image", "/camera/depth/image_raw"),
-        ("imu", "/imu"),
-        ("odom", "odom_rgbd")
+        ("/camera/camera/color/image_raw", "/camera/image_raw"),
+        ("/camera/camera/color/camera_info", "/camera/camera_info"),
+        ("/camera/camera/depth/image_rect_raw", "/camera/depth/image_raw")
     ],
     arguments=["--ros-args", "--log-level", "info"],
     condition = IfCondition(PythonExpression([pose_estimator, " == 'rgbd_odometry'"]))
