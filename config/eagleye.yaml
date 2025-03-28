@@ -7,7 +7,7 @@
     # Topic
     twist:
       twist_type: 0 # TwistStamped : 0, TwistWithCovarianceStamped: 1
-      twist_topic: /eureka_odometry
+      twist_topic: /eureka_odometry/twist_stamped
     imu_topic: /imu/data_raw
     gnss:
       velocity_source_type: 0 # rtklib_msgs/RtklibNav: 0, nmea_msgs/Sentence: 1, ublox_msgs/NavPVT: 2, geometry_msgs/TwistWithCovarianceStamped: 3

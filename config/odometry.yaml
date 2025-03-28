@@ -1,6 +1,7 @@
 eureka_odometry:
   ros__parameters:
     odometry_pub_topic: "~/odometry"
+    twist_pub_topic: "~/twist_stamped"
     joint_sub_topic: "/wheel_states"
     imu_sub_topic: "/imu/data"
     enable_odom_tf: false
